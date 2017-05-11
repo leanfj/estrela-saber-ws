@@ -192,9 +192,13 @@ footer a {
 
 /*MEDIA QUERIES*/
 @media (max-width:400px) {
+  .container {
+    width: 100%;
+  }
   .logo {
-    top: 70px;
-    left: 80px;
+    top: 90px;
+    left: 25%;
+    margin: 0;
     width: 50%;
   }
   .logo h1 {
@@ -221,8 +225,16 @@ footer a {
     width: 90%;
   }
 }
-@media (max-width:768px) {
+@media (min-width:401px) and (max-width:768px) {
   .container {
     width: 100%;
   }
+  .logo {
+    min-width: 200px;
+
+  }
+  .logo h1 {
+    font-size: 1.2em;
+  }
+
 }
