@@ -182,21 +182,64 @@ iframe {
 .contato__mapa {
   width: 400px;
   height: 300px;
-  margin-bottom: 50px;
-}
-.contato__mapa p {
-  margin-bottom: 5px;
+  margin:auto;
 }
 .contato__info {
-  margin: 30px;
+  flex: 1;
+  padding: 5px;
 }
 .contato__info address{
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 .contato__info p {
   margin-bottom: 10px;
 }
+.contato__info h3 {
+  margin-top: 10px;
+  text-align: center;
+}
+.formulario {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+.formulario label {
+ margin: 5px;
+ display: inline-block;
+}
+.formulario input {
+  width: 81%;
+  line-height: 1.7;
+  margin-top: 10px;
+  padding: 5px;
+  background: none;
+  border: 1px solid #000;
+}
+.formulario textarea {
+  margin-top: 5px;
+  width: 100%;
+  resize: vertical;
+  background: none;
+  border: 1px solid #000;
+  text-align: center;
+  padding: 5px;
+}
+.formulario button {
+  background: #fff;
+  border: none;
+  border-radius: 3px;
+  margin-top: 5px;
+  padding: 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  transition: all .3s;
 
+}
+.formulario button:hover {
+  background-color: #F9AE00;
+}
 
 /*FOOTER*/
 footer {
@@ -243,6 +286,14 @@ footer a {
   .sobre h2 {
     width: 90%;
   }
+  .formulario label {
+    margin: 0;
+  }
+  .formulario input {
+    margin-top: 0;
+    margin-bottom: 5px;
+    width: 100%;
+  }
 }
 @media (min-width:401px) and (max-width:768px) {
   .container {
@@ -254,6 +305,9 @@ footer a {
   }
   .logo h1 {
     font-size: 1.2em;
+  }
+  .contato {
+    flex-direction: column;
   }
 
 }
