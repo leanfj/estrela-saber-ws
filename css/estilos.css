@@ -179,17 +179,17 @@ iframe {
   text-align: center;
   background-color: #FFBF23;
 }
-.contato__mapa {
-  width: 400px;
+.mapa__iframe iframe{
   height: 300px;
-  margin:auto;
+  min-width: 310px;
+  display: block;
+  margin: 0 auto;
+}
+.endereco {
+  margin-top: 20px;
 }
 .contato__info {
   flex: 1;
-  padding: 5px;
-}
-.contato__info address{
-  margin-bottom: 15px;
 }
 .contato__info p {
   margin-bottom: 10px;
@@ -199,7 +199,7 @@ iframe {
   text-align: center;
 }
 .formulario {
-  width: 70%;
+  width: 85%;
   margin: 0 auto;
   text-align: center;
 }
