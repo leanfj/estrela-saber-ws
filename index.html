@@ -75,13 +75,24 @@
       </div>
       <div class="contato__info">
         <h3>Entre em contato</h3>
-        <form class="formulario" action="index.html" method="post">
+        <form class="formulario">
           <label for="nome">Nome:</label><input type="text" name="nome" value="" placeholder="Seu nome">
           <label for="email">Email:</label><input type="email" name="email" value="" placeholder="Seu email">
           <label for="texto">Mensagem</label>
           <textarea name="texto" rows="5" cols="10" placeholder="Sua mensagem aqui"></textarea>
-          <button type="submit" name="button">Enviar</button>
+
         </form>
+        <button name="button" id="btn_envia" >Enviar</button>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Sua Mensagem foi enviada</p>
+          </div>
+
+        </div>
       </div>
     </section>
     <footer>
